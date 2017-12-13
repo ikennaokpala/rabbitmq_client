@@ -1,0 +1,33 @@
+AllCops:
+  TargetRubyVersion: 2.3
+  Exclude:
+    - 'db/**/*'
+    - 'vendor/**/*'
+    - 'bin/spring'
+
+Metrics/LineLength:
+  Max: 160
+
+Metrics/BlockLength:
+  Enabled: false
+
+Documentation:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/AsciiComments:
+  Enabled: false
+
+Layout/LeadingCommentSpace:
+  Enabled: false
+
+Rails:
+  Enabled: true
+
+Rails/SkipsModelValidations:
+  Enabled: false
+
+Lint/AmbiguousBlockAssociation:
+  Enabled: false
