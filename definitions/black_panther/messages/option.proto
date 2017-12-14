@@ -1,0 +1,7 @@
+syntax = "proto3";
+package black_panther.messages;
+
+message Option {
+  string description = 1;
+  double price = 2;
+}

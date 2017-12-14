@@ -3,6 +3,7 @@ AllCops:
   Exclude:
     - 'db/**/*'
     - 'vendor/**/*'
+    - 'lib/black_panther/messages/*_pb.rb'
     - 'bin/spring'
 
 Metrics/LineLength:

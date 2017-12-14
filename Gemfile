@@ -7,5 +7,8 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 # Specify your gem's dependencies in black_panther.gemspec
 gemspec
 
-gem 'rake'
-gem 'rspec'
+group :development, :test do
+  gem 'rake'
+  gem 'rspec'
+  gem 'simplecov'
+end

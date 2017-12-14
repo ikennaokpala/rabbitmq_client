@@ -1,0 +1,27 @@
+syntax = "proto3";
+package black_panther.messages;
+
+import 'black_panther/messages/engine.proto';
+import 'black_panther/messages/fuel_group.proto';
+import 'black_panther/messages/transmission_group.proto';
+import 'black_panther/messages/manufacturer.proto';
+import 'black_panther/messages/model_group.proto';
+import 'black_panther/messages/model.proto';
+import 'black_panther/messages/option.proto';
+import 'black_panther/messages/residual_value.proto';
+
+message Vehicle {
+  double price = 1;
+  string kee_id = 2;
+  string cap_id = 3;
+  string co2 = 4;
+
+  Engine engine = 5;
+  FuelGroup fuel_group = 6;
+  TransmissionGroup transmission_group = 7;
+  Manufacturer manufacturer = 8;
+  ModelGroup model_group = 9;
+  Model model = 10;
+  repeated Option option = 11;
+  repeated ResidualValue residual_value = 12;
+}

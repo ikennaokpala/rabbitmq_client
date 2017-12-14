@@ -1,0 +1,10 @@
+syntax = "proto3";
+package black_panther.messages;
+
+import 'black_panther/messages/model_group.proto';
+
+message Manufacturer {
+  string name = 1;
+
+  repeated ModelGroup model_group = 2;
+}

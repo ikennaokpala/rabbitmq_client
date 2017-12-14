@@ -1,0 +1,10 @@
+syntax = "proto3";
+package black_panther.messages;
+
+import 'black_panther/messages/bodystyle.proto';
+
+message Model {
+  string name = 1;
+
+  BodyStyle bodystyle = 2;
+}

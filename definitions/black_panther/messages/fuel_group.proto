@@ -1,0 +1,13 @@
+syntax = "proto3";
+package black_panther.messages;
+
+message FuelGroup {
+  enum Descriptions {
+    PETROL = 0;
+    DIESEL = 1;
+    ELECTRIC = 2;
+    HYBRID = 3;
+  }
+
+  Descriptions description = 1;
+}

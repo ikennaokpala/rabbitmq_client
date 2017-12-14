@@ -2,6 +2,7 @@
 
 require 'bundler/setup'
 require 'black_panther'
+require 'simplecov'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
@@ -13,4 +14,9 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+end
+
+SimpleCov.minimum_coverage 100
+SimpleCov.start 'rails' do
+  add_filter '/lib/tasks/ci'
 end

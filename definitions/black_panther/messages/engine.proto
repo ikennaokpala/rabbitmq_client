@@ -1,0 +1,6 @@
+syntax = "proto3";
+package black_panther.messages;
+
+message Engine {
+  string name = 1;
+}
