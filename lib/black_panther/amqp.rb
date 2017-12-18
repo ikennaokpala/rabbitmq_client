@@ -35,7 +35,7 @@ module BlackPanther
     def load_configurations
       raise ConfigurationFileNotFound unless File.exist?(path_to_file)
 
-      YAML.safe_load(erbify)
+      YAML.load(erbify)
     end
 
     def erbify
