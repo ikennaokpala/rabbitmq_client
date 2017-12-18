@@ -43,7 +43,7 @@ module BlackPanther
     end
 
     def read_file
-      Fiel.read(path_to_file)
+      File.read(path_to_file)
     end
 
     def path_to_file
