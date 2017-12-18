@@ -21,4 +21,5 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency 'google-protobuf'
   spec.add_runtime_dependency 'protobuf', '~> 3.6'
+  spec.add_runtime_dependency 'bunny', '~> 2.7.2'
 end
